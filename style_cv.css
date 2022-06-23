@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+}
+
+#page {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    grid-template-areas: "aside main"
+                         "aside main"
+                         "aside foot";
+    grid-template-columns: 1.5fr 3fr;
+    grid-template-rows: 1fr 2fr 0.5fr;
+  }
+  
+  #page > aside {
+    grid-area: aside;
+    color: #FFE7D3;
+    background-color: #363D4B;
+    
+  }
+  
+  #page > main {
+    grid-area: main;
+    background-color: #fdeddf;
+    border-radius: 0 100px 0 0;
+  }
+  
+  #page > footer {
+    grid-area: foot;
+    background-color: #fdeddf;
+    border-radius: 0 0 100px 0;
+  }
+
+  .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 30px 25px;
+      background-color: #3f7778;
+      border-bottom: solid 1px black;
+      border-right: solid 1px black ;
+      border-radius: 100px 0 0 0;
+  }
+
+  aside {
+    position: relative;
+    border-radius: 0 0 0 100px;   
+    background-color: #363D4B;
+    }
+
+  .aside {
+    color: #fdeddf;
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    padding-right: 10px;
+  }
+
+  .photo2_cv {
+    border-radius: 50%;
+    border: solid 4px #fdeddf;
+    margin: 40px 50px;
+    padding: 3px;
+  }
+  
+  .back-to-top {
+
+    grid-area: aside;
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    justify-content: center;
+  }
+
+.back-to-top > div {
+  display: flex;
+  align-items: center;
+}
+  .back-to-top a{
+    color: #363D4B;
+    background-color: #fdeddf;
+    padding: 50px 20px;
+    border-radius: 20%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.8s, background-color 0.8s;
+  }
+
+.back-to-top a:hover{
+  color: #fdeddf;
+  background-color: #363D4B;
+  transition: color 0.5s, background-color 0.5s;
+  border: solid 5px #fdeddf;
+}
+  main {
+    background-color: #fdeddf;
+    color: #363D4B;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #fdeddf;
+    margin: 20vh 10px;
+  }
+
+  h2 {
+    padding: 35px 20px 35px 30px;
+    font-size: 2.5rem;
+    margin: auto 30px;
+    text-align: center;
+    
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px 30px;
+    color: #fdeddf;
+    background-color: #363D4B;
+     border-radius: 20px;
+    width: fit-content;
+    margin: 40px 0px 20px 40px;
+    letter-spacing: 1.5px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 5px 20px;
+    padding: 20px 30px;
+  }
+
+.contact li {
+  padding: 20px;
+}
+
+.contact li:nth-child(2n+1) {
+  background-color: #fdeddf;
+  color: #363D4B;
+  border-radius: 5px;
+  width: 70%;
+  transition: color 0.8s, background-color 0.8s;
+}
+.contact li:nth-child(2n+1):hover {
+  background-color: #363D4B;
+  color: #fdeddf;
+  border: solid 2px #fdeddf;
+  transition: background-color 0.4s ease-in-out;
+}
+
+aside li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0 20px;
+    margin: 20px 35px;
+  }
+  
+  .stylized li {
+    list-style:circle;
+  }
+  strong {
+    font-weight: bold;
+  }
+
+  .date {
+    font-size: 2rem;
+    margin: 30px 20px 10px 25px;
+    color: #363D4B;
+    font-weight: bold;
+  }
+
+  .organization {
+    padding: 10px 30px 20px 20px;
+    color: #3f7778;
+    font-weight: bold;
+  }
+
+  main p {
+    line-height: 3.5rem;
+  }
+
+  footer p {
+    padding: 10px 20px;
+    line-height: 2.5rem;
+  }
+
+  li.imp {
+    font-size: 1.7rem;
+    margin: 10px 0px 0px 40px;
+    font-weight: bold;
+    padding: 5px;
+
+  }
+  
+  li.small {
+    font-size: 1.7rem;
+    margin: 10px 0px 10px 40px;
+    padding: 5px;
+
+  }
+
+  aside hr {
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .back-to-top a {
+      
+      color: #363D4B;
+      background-color: #fdeddf;
+      padding: 11px 20px;
+      border-radius: 5px;
+      margin-top: 802vh;
+      margin-left: 16vw;
+    }
+    h3 {
+      margin: 20px 20px;
+      font-size: 1.5rem;
+    }
+  }
