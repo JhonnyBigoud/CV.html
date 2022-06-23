@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style_cv.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+}
+
+#page {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    grid-template-areas: "aside main"
+                         "aside main"
+                         "aside foot";
+    grid-template-columns: 1.5fr 3fr;
+    grid-template-rows: 1fr 2fr 0.5fr;
+  }
+  
+  #page > aside {
+    grid-area: aside;
+    color: #FFE7D3;
+    background-color: #363D4B;
+    
+  }
+  
+  #page > main {
+    grid-area: main;
+    background-color: #fdeddf;
+    border-radius: 0 100px 0 0;
+  }
+  
+  #page > footer {
+    grid-area: foot;
+    background-color: #fdeddf;
+    border-radius: 0 0 100px 0;
+  }
+
+  .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 30px 25px;
+      background-color: #3f7778;
+      border-bottom: solid 1px black;
+      border-right: solid 1px black ;
+      border-radius: 100px 0 0 0;
+  }
+
+  aside {
+    position: relative;
+    border-radius: 0 0 0 100px;   
+    background-color: #363D4B;
+    }
+
+  .aside {
+    color: #fdeddf;
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    padding-right: 10px;
+  }
+
+  .photo2_cv {
+    border-radius: 50%;
+    border: solid 4px #fdeddf;
+    margin: 40px 50px;
+    padding: 3px;
+  }
+  
+  .back-to-top {
+
+    grid-area: aside;
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    justify-content: center;
+  }
+
+.back-to-top > div {
+  display: flex;
+  align-items: center;
+}
+  .back-to-top a{
+    color: #363D4B;
+    background-color: #fdeddf;
+    padding: 50px 20px;
+    border-radius: 20%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.8s, background-color 0.8s;
+  }
+
+.back-to-top a:hover{
+  color: #fdeddf;
+  background-color: #363D4B;
+  transition: color 0.5s, background-color 0.5s;
+  border: solid 5px #fdeddf;
+}
+  main {
+    background-color: #fdeddf;
+    color: #363D4B;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #fdeddf;
+    margin: 20vh 10px;
+  }
+
+  h2 {
+    padding: 35px 20px 35px 30px;
+    font-size: 2.5rem;
+    margin: auto 30px;
+    text-align: center;
+    
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px 30px;
+    color: #fdeddf;
+    background-color: #363D4B;
+     border-radius: 20px;
+    width: fit-content;
+    margin: 40px 0px 20px 40px;
+    letter-spacing: 1.5px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 5px 20px;
+    padding: 20px 30px;
+  }
+
+.contact li {
+  padding: 20px;
+}
+
+.contact li:nth-child(2n+1) {
+  background-color: #fdeddf;
+  color: #363D4B;
+  border-radius: 5px;
+  width: 70%;
+  transition: color 0.8s, background-color 0.8s;
+}
+.contact li:nth-child(2n+1):hover {
+  background-color: #363D4B;
+  color: #fdeddf;
+  border: solid 2px #fdeddf;
+  transition: background-color 0.4s ease-in-out;
+}
+
+aside li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0 20px;
+    margin: 20px 35px;
+  }
+  
+  .stylized li {
+    list-style:circle;
+  }
+  strong {
+    font-weight: bold;
+  }
+
+  .date {
+    font-size: 2rem;
+    margin: 30px 20px 10px 25px;
+    color: #363D4B;
+    font-weight: bold;
+  }
+
+  .organization {
+    padding: 10px 30px 20px 20px;
+    color: #3f7778;
+    font-weight: bold;
+  }
+
+  main p {
+    line-height: 3.5rem;
+  }
+
+  footer p {
+    padding: 10px 20px;
+    line-height: 2.5rem;
+  }
+
+  li.imp {
+    font-size: 1.7rem;
+    margin: 10px 0px 0px 40px;
+    font-weight: bold;
+    padding: 5px;
+
+  }
+  
+  li.small {
+    font-size: 1.7rem;
+    margin: 10px 0px 10px 40px;
+    padding: 5px;
+
+  }
+
+  aside hr {
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .back-to-top a {
+      
+      color: #363D4B;
+      background-color: #fdeddf;
+      padding: 11px 20px;
+      border-radius: 5px;
+      margin-top: 802vh;
+      margin-left: 16vw;
+    }
+    h3 {
+      margin: 20px 20px;
+      font-size: 1.5rem;
+    }
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- ------------------------------------------------------------------------------------------------ -->
+    </header>
+    <section id="page">
+        <aside>
+            <div class="aside">
+                <div class="header">
+                    <img class ="photo2_cv" src="images/photo2_cv.png" alt="photo CV">
+                    <h1>Alexis Niset</h1>
+                </div>
+                <h2 id="contacts">Contact</h2>
+                <!-- ------------------------------------------------------------------------------------------------ -->
+                <div class="contact">
+                    <!-- <li><i class="icon fa-solid fa-user"></i>Alexis Niset</li> -->
+                    <li><i class="icon fa-solid fa-envelope"></i><a href="mailto:niset.alexis@hotmail.fr">niset.alexis@hotmail.fr</a> </li>
+                    <li><i class="icon fa-solid fa-calendar-days"></i>6 Mars 1990</li>
+                    <li><i class="icon fa-solid fa-phone"></i><a href=""tel:+33679122086">0679122086</a></li>
+                    <!-- <li><i class="icon fa-solid fa-house"></i>3, rue du Cantin 62300 Lens</li> -->
+                    <li><i class="icon fa-solid fa-car"></i>Permis B</li>
+                    <li><a href="https://www.linkedin.com/in/alexis-niset-127b06138/" target="_blank"><i class="icon fa-brands fa-linkedin"></i>Linkedin</a></li>
+                </div>
+                <hr>
+                <div>
+                    <h2>Langues</h2>
+                <!-- ------------------------------------------------------------------------------------------------ -->
+                    <p><i class="icon fa-solid fa-flag"></i>Anglais: Niv. C1-C2</p>
+                    <p><i class="icon fa-solid fa-flag"></i>Espagnol: A2</p>
+                </div>
+                <hr>
+                <div class="stylized">
+                    <h2>Centres d'intérêt</h2>
+                <!-- ------------------------------------------------------------------------------------------------ -->
+                    <li>Sciences et technologies</li>
+                    <li>Musique : Piano</li>
+                </div>
+                <hr>
+                 <div class="stylized">
+                    <h2>Qualités</h2>
+
+                    <li>Logique</li>
+                    <li>Sociable</li>
+                    <li>Polyvalent</li>
+                </div>
+            </div>
+            <div class="back-to-top">
+                <div>
+                    <a href="#contacts">Me contacter</a>
+                </div>
+            </div>
+        </aside>
+            <main>
+                <h3>Profil</h3>
+            <!-- ------------------------------------------------------------------------------------------------ -->
+                <p>
+                    Actuellement en <strong>reconversion professionnelle</strong>, je suis en formation en présentiel ET distanciel
+                    dans l'optique de devenir <strong>développeur web/mobile</strong>. Je cherche à 
+                    expérimenter le monde de l'entreprise afin d'avoir une idée plus 
+                    concrète du métier de développeur et acquérir des connaissances 
+                    pratiques et théoriques qui me serviront tout au long de mon parcours. J'aimerais 
+                    m'orienter sur le front-end dans un premier temps et acquérir des 
+                    compétences plus larges par la suite.
+                </p>
+                <hr>
+                <h3>Formation</h3>
+            <!-- ------------------------------------------------------------------------------------------------ -->
+                <div class="flex-item">
+                    <div class="date">
+                        Juin 2022
+                    </div>
+                    <p class="organization">
+                        Webforce3 - La Madeleine
+                    </p>
+                    <p>
+                        Début formation <strong>bootcamp</strong>  présentiel et recherche d'<strong>alternance</strong>  en partenariat avec l'école Webforce3.
+                    </p>
+                </div>
+                <div class="flex-item">
+                    <div class="date">
+                        Février 2022
+                    </div>
+                    <p class="organization">
+                        Digital Campus
+                    </p>
+                    <p>
+                        Développeur web full stack / formation en ligne avec l'école Digital Campus.
+                    </p>
+                </div>
+                <div class="flex-item">
+                    <div class="date">
+                        2009 - 2017
+                    </div>
+                   <p class="organization">
+                       Faculté de médecine Henri Warembourg, Lille
+                   </p>
+                   <p>
+                       Médecine: Arrêt du cursus médical en fin de 5ème année.
+                   </p>
+                </div>
+                <div class="flex-item">
+                    <div class="date">
+                        BAC S 2008
+                    </div>
+                    <p class="organization">    
+                        Lycée général et technologique Voltaire, Wingles
+                    </p>
+                </div>
+                <hr>
+                <h3>Expériences pofessionnelles</h3>
+            <!-- ------------------------------------------------------------------------------------------------ -->
+                <div class="flex-item">
+                    <div class="date"> 2018 - 2022</div>
+                    <p class="organization">
+                        Intérimaire:
+                        Adecco, Manpower ... Secteur Lens
+                    </p>
+                    <p>
+                        Diverses missions et contrats intérimaires dans le secteur de la 
+                        logistique, BTP, restauration, livraison, vendanges...
+                    </p>
+                </div>
+                <div class="flex-item">
+                    <div class="date">
+                         2010 - 2017
+                    </div>
+                    <p class="organization">
+                        Externe en médecine
+                        CHRU Lille, Lille/Périphérie
+                    </p>
+                    <p>
+                        Vingtaine stages rémunérés + gardes, temps plein en service hospitalier (Neurochirurgie, Urgences 
+                        Médicales, Gynécologie, Pédiatrie ...). Prise en charge et accueil des patients.
+                        Tenue et suivi du dossier médical. Examen clinique/biologique.
+                    </p>
+                </div>
+        </main>
+        <footer>
+            <hr>
+            <h3>Compétences</h3>
+            <!-- ------------------------------------------------------------------------------------------------ -->
+            <p>
+                <li class="imp">Maîtrise du HTML/CSS, intégration web basique</li>
+                <li class="imp">Apprentissage du Javascript</li>
+                <li class="imp">Utilisation Bootstrap, Jquery, Wordpress</li>
+            </p>
+            <p>
+                <li class="small">AFGSU niveau 2 (Formation aux soins et gestes de premier secours)</li>
+                <li class="small">BNS (Brevet de secourisme et formation à la réanimation cardio-pulmonaire sur enfant)</li>
+            </p>
+            <hr>
+            <h3>Réalisation</h3>
+            <h4>
+                <p class="organization">
+                    Projet humanitaire: <span>Bénin</span> , juin 2010.
+                </p>
+            </h4>
+            <p>
+                Récolte de fonds : <strong>17 000€</strong>. Voyage sur place pour une durée de 1 mois. <br>
+                <strong>Projet</strong> : équipements,  prévention SIDA/Paludisme auprès des populations.
+                Dons de fournitures scolaires et cours dispensés et aux enfants de la commune.
+            </p>
+        </footer>
+      </section>
+</body>
+</html>
+
+<!--  -->
