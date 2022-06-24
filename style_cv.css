@@ -88,13 +88,14 @@ body, html {
     border-radius: 20%;
     font-size: 1.5rem;
     font-weight: bold;
-    transition: color 0.8s, background-color 0.8s;
+    transition: color 0.8s, background-color 0.8s, border 0.8s;
+    border: solid 5px #363D4B;
   }
 
 .back-to-top a:hover{
   color: #fdeddf;
   background-color: #363D4B;
-  transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s, border 0.5s;
   border: solid 5px #fdeddf;
 }
   main {
@@ -144,13 +145,14 @@ body, html {
   color: #363D4B;
   border-radius: 5px;
   width: 70%;
-  transition: color 0.8s, background-color 0.8s;
+  border: solid 2px #363D4B;
+  transition: color 0.8s, background-color 0.8s, border 0.8s;
 }
 .contact li:nth-child(2n+1):hover {
   background-color: #363D4B;
   color: #fdeddf;
   border: solid 2px #fdeddf;
-  transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, border 0.4s ease-in-out;
 }
 
 aside li {
